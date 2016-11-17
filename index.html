@@ -13,14 +13,14 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
      <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
      <script type="text/javascript" src=assets/javascript/app.js></script>
-     <!-- Create title header : move to the right -->  
+ </head>  
+ <!--upload trivia background image-->
+  <body background= "assets/images/trivia.jpg" style= "width: 100%; height: 100%">
+    <!-- Create title header : move to the right -->  
 	 <header>	
 		<h1><span class="page-header" style="margin-left: 300px; color: white">Totally Trivial Trivia!</span></h1>
 		<hr>
 	</header>
-</head>
- <!--upload trivia background image-->
-  <body background="assets/images/trivia.jpg" style = "width: 100%; height: 100%">
 	<!-- Include buttonS to start AND RESET game -->
   	<div id="wrapper">
   		<!--Create box for time remaining -->
@@ -39,10 +39,10 @@
     <!--A super simple slider (questionContainer) to hold our individual questions. Each slide will be housed within this div element -->
     <!--the intro container, the one which is displayed asking the user to take the quiz-->
     	<div id="intro-container" class="questionContainer"> 
-      		<a class="startClick" href="#"><img class="startImg" src="assets/images/start.png" /></a>
+      		<a class="startClick" href="#"><img class="startImg" src="assets/images/start.png" alt="start image"></a>
     	</div>
-    	<div class="questionContainer hide">
-      		<!-- a div element that contains each of the questions -->
+    	<div class="questionContainer">
+      		<!-- a div element that contains each of the questions (1) -->
       		<div class="question">
       			A webpage displays a picture. What tag was used to display that picture?
       		</div> 
@@ -64,269 +64,278 @@
 	      	</ul>
 	      	<div class="btnContainer">
 	        	<div class="next">
-	          		<a class="btnNext" href="#">Next</a>
+	          		<a class="btnNext" href="#"><img style="width:60px; height:60px;" src="assets/images/forward.jpg" alt="next button"></a>
 	        	</div>
 	        	<div class="clear">
 	        	</div>
 	      	</div>
 	     </div> 
-	     <div class="questionContainer hide"> 
+	     <!--Q2 -->
+	     <div class="questionContainer"> 
 	        <div class="question"> 
-	            < b > tag makes the enclosed text bold. What is other tag to make text bold? 
+	            enclosed b tag makes the enclosed text bold. What is other tag to make text bold? 
 	        </div> 
 	        <ul class="answers"> 
 	            <li> 
-	            <label><input data-key="a" type="radio">< strong ></label> 
+	            <label><input data-key="a" type="radio"> enclosed strong</label> 
 	            </li> 
 	            <li> 
-	            <label><input data-key="b" type="radio">< dar ></label> 
+	            <label><input data-key="b" type="radio">enclosed dar </label> 
 	            </li> 
 	            <li> 
-	            <label><input data-key="c" type="radio">< black ></label> 
+	            <label><input data-key="c" type="radio">enclosed black </label> 
 	            </li> 
 	            <li> 
-	            <label><input data-key="d" type="radio">< emp ></label> 
+	            <label><input data-key="d" type="radio">enclosed emp</label> 
 	            </li> 
 	        </ul> 
 	        <div class="btnContainer"> 
 	            <div class="prev"> 
-	                <a class="btnPrev" href="#">Prev</a> 
+	                <a class="btnPrev" href="#"><img style="width:60px; height:60px;" src="assets/images/back.png" alt="next button"></a>
 	            </div> 
 	            <div class="next"> 
-	                <a class="btnNext" href="#">Next</a> 
+	               <a class="btnNext" href="#"><img style="width:60px; height:60px;" src="assets/images/forward.jpg" alt="prev button"></a> 
 	            </div> 
 	            <div class="clear"> 
 	            </div> 
 	        </div> 
 	    </div> 
-	    <div class="questionContainer hide"> 
+	    <!--Q3 -->
+	    <div class="questionContainer"> 
 	        <div class="question">   
 				Tags and test that are not directly displayed on the page are written in _____ section. 
 	        </div> 
 	        <ul class="answers"> 
 	            <li> 
-	            <label><input data-key="a" type="radio">< html ></label> 
+	            <label><input data-key="a" type="radio">enclosed html</label> 
 	            </li> 
 	            <li> 
-	            <label><input data-key="b" type="radio">< head ></label> 
+	            <label><input data-key="b" type="radio">enclosed head</label> 
 	            </li> 
 	            <li> 
-	            <label><input data-key="c" type="radio">< title ></label> 
+	            <label><input data-key="c" type="radio">enclosed title</label> 
 	            </li> 
 	            <li> 
-	            <label><input data-key="d" type="radio">< body ></label> 
+	            <label><input data-key="d" type="radio">enclosed body</label> 
 	            </li> 
 	        </ul> 
 	        <div class="btnContainer"> 
 	            <div class="prev"> 
-	                <a class="btnPrev" href="#">Prev</a> 
+	                <a class="btnPrev" href="#"><img style="width:60px; height:60px;" src="assets/images/back.png" alt="next button"></a>
 	            </div> 
 	            <div class="next"> 
-	                <a class="btnNext" href="#">Next</a> 
+	                <a class="btnNext" href="#"><img style="width:60px; height:60px;" src="assets/images/forward.jpg" alt="prev button"></a>
 	            </div> 
 	            <div class="clear"> 
 	            </div> 
 	        </div> 
 	    </div>
-	    <div class="questionContainer hide"> 
+	    <!--Q4 -->
+	    <div class="questionContainer"> 
 	        <div class="question">   
 				Which tag inserts a line horizontally on your web page? 
 	        </div> 
 	        <ul class="answers"> 
 	            <li> 
-	            <label><input data-key="a" type="radio">< hr ></label> 
+	            <label><input data-key="a" type="radio">enclosed hr</label> 
 	            </li> 
 	            <li> 
-	            <label><input data-key="b" type="radio">< line ></label> 
+	            <label><input data-key="b" type="radio">enclosed line</label> 
 	            </li> 
 	            <li> 
-	            <label><input data-key="c" type="radio">< line direction=”horizontal” ></label> 
+	            <label><input data-key="c" type="radio">enclosed line direction=”horizontal”</label> 
 	            </li> 
 	            <li> 
-	            <label><input data-key="d" type="radio">< tr ></label> 
+	            <label><input data-key="d" type="radio">enclosed tr</label>  n
 	            </li> 
 	        </ul> 
 	        <div class="btnContainer"> 
 	            <div class="prev"> 
-	                <a class="btnPrev" href="#">Prev</a> 
+	                <a class="btnPrev" href="#"><img style="width:60px; height:60px;" src="assets/images/back.png" alt="prev button"></a>
 	            </div> 
 	            <div class="next"> 
-	                <a class="btnNext" href="#">Next</a> 
+	                <a class="btnNext" href="#"><img style="width:60px; height:60px;" src="assets/images/forward.jpg" alt="next button"></a>
 	            </div> 
 	            <div class="clear"> 
 	            </div> 
 	        </div> 
 	    </div>
-	    <div class="questionContainer hide"> 
+	    <!--Q5 -->
+	    <div class="questionContainer"> 
 	        <div class="question">   
 				 What should be the first tag in any HTML document? 
 	        </div> 
 	        <ul class="answers"> 
 	            <li> 
-	            <label><input data-key="a" type="radio">< head ></label> 
+	            <label><input data-key="a" type="radio">enclosed head</label> 
 	            </li> 
 	            <li> 
-	            <label><input data-key="b" type="radio">< title ></label> 
+	            <label><input data-key="b" type="radio">enclosed title</label> 
 	            </li> 
 	            <li> 
-	            <label><input data-key="c" type="radio">< html ></label> 
+	            <label><input data-key="c" type="radio">enclosed html</label> 
 	            </li> 
 	            <li> 
-	            <label><input data-key="d" type="radio">< document ></label> 
+	            <label><input data-key="d" type="radio">enclosed document</label> 
 	            </li> 
 	        </ul> 
 	        <div class="btnContainer"> 
 	            <div class="prev"> 
-	                <a class="btnPrev" href="#">Prev</a> 
+	                <a class="btnPrev" href="#"><img style="width:60px; height:60px;" src="assets/images/back.png" alt="prev button"></a>
 	            </div> 
 	            <div class="next"> 
-	                <a class="btnNext" href="#">Next</a> 
+	                <a class="btnNext" href="#"><img style="width:60px; height:60px;" src="assets/images/forward.jpg" alt="next button"></a>
 	            </div> 
 	            <div class="clear"> 
 	            </div> 
 	        </div> 
 	    </div> 
-	    <div class="questionContainer hide"> 
+	    <!--Q6 -->
+	    <div class="questionContainer"> 
 	        <div class="question">   
 				 Which tag allows you to add a row in a table?
 	        </div> 
 	        <ul class="answers"> 
 	            <li> 
-	            <label><input data-key="a" type="radio">< td > and </ td > </label> 
+	            	<label><input data-key="a" type="radio">enclosed td and enclosed/td</label> 
 	            </li> 
 	            <li> 
-	            <label><input data-key="b" type="radio">< cr > and </ cr ></label> 
+	            	<label><input data-key="b" type="radio">enclosed cr and enclosed/cr</label> 
 	            </li> 
 	            <li> 
-	            <label><input data-key="c" type="radio">< th > and </ th ></label> 
+	            	<label><input data-key="c" type="radio">enclosed th and enclosed/th</label> 
 	            </li> 
 	            <li> 
-	            <label><input data-key="d" type="radio">< tr > and </ tr ></label> 
+	            	<label><input data-key="d" type="radio">enclosed tr and enclosed/tr</label> 
 	            </li> 
 	        </ul> 
 	        <div class="btnContainer"> 
 	            <div class="prev"> 
-	                <a class="btnPrev" href="#">Prev</a> 
+	                <a class="btnPrev" href="#"><img style="width:60px; height:60px;" src="assets/images/back.png" alt="prev button"></a>
 	            </div> 
 	            <div class="next"> 
-	                <a class="btnNext" href="#">Next</a> 
+	                <a class="btnNext" href="#"><img style="width:60px; height:60px;" src="assets/images/forward.jpg" alt="next button"></a>
 	            </div> 
 	            <div class="clear"> 
 	            </div> 
 	        </div> 
 	    </div> 
-	    <div class="questionContainer hide"> 
+	    <!--Q7 -->
+	    <div class="questionContainer"> 
 	        <div class="question">   
 				 How can you make a bulleted list?
 	        </div> 
 	        <ul class="answers"> 
 	            <li> 
-	            <label><input data-key="a" type="radio">< list > </label> 
+	            <label><input data-key="a" type="radio">enclosed list</label> 
 	            </li> 
 	            <li> 
-	            <label><input data-key="b" type="radio">< nl ></label> 
+	            <label><input data-key="b" type="radio">enclosed nl</label> 
 	            </li> 
 	            <li> 
-	            <label><input data-key="c" type="radio">< ul ></label> 
+	            <label><input data-key="c" type="radio">enclosed ul</label> 
 	            </li> 
 	            <li> 
-	            <label><input data-key="d" type="radio">< ol ></label> 
+	            <label><input data-key="d" type="radio">enclosed ol</label> 
 	            </li> 
 	        </ul> 
 	        <div class="btnContainer"> 
 	            <div class="prev"> 
-	                <a class="btnPrev" href="#">Prev</a> 
+	                <a class="btnPrev" href="#"><img style="width:60px; height:60px;" src="assets/images/back.png" alt="prev button"></a>
 	            </div> 
 	            <div class="next"> 
-	                <a class="btnNext" href="#">Next</a> 
+	                <a class="btnNext" href="#"><img style="width:60px; height:60px;" src="assets/images/forward.jpg" alt="next button"></a>
 	            </div> 
 	            <div class="clear"> 
 	            </div> 
 	        </div> 
 	    </div>
-	    <div class="questionContainer hide"> 
+	    <!--Q8 -->
+	    <div class="questionContainer"> 
 	        <div class="question">   
 				 How can you make a numbered list?
 	        </div> 
 	        <ul class="answers"> 
 	            <li> 
-	            <label><input data-key="a" type="radio">< dl > </label> 
+	            <label><input data-key="a" type="radio">enclosed dl</label> 
 	            </li> 
 	            <li> 
-	            <label><input data-key="b" type="radio">< ol ></label> 
+	            <label><input data-key="b" type="radio">enclosedol</label> 
 	            </li> 
 	            <li> 
-	            <label><input data-key="c" type="radio">< list ></label> 
+	            <label><input data-key="c" type="radio">enclosed list</label> 
 	            </li> 
 	            <li> 
-	            <label><input data-key="d" type="radio">< ul ></label> 
+	            <label><input data-key="d" type="radio">enclosed ul</label> 
 	            </li> 
 	        </ul> 
 	        <div class="btnContainer"> 
 	            <div class="prev"> 
-	                <a class="btnPrev" href="#">Prev</a> 
-	            </div> 
+	                <a class="btnPrev" href="#"><img style="width:60px; height:60px;" src="assets/images/back.png" alt="prev button"></a>
+	        	</div>
 	            <div class="next"> 
-	                <a class="btnNext" href="#">Next</a> 
+	                <a class="btnNext" href="#"><img style="width:60px; height:60px;" src="assets/images/forward.jpg" alt="next button"></a>
 	            </div> 
 	            <div class="clear"> 
 	            </div> 
 	        </div> 
 	    </div>
-	    <div class="questionContainer hide"> 
+	    <!--Q9 -->
+	    <div class="questionContainer"> 
 	        <div class="question">   
 				How can you make an e-mail link?
 	        </div> 
 	        <ul class="answers"> 
 	            <li> 
-	            <label><input data-key="a" type="radio">< a href=”xxx@yyy” > </label> 
+	            <label><input data-key="a" type="radio">enclosed a href=”xxx@yyy”</label> 
 	            </li> 
 	            <li> 
-	            <label><input data-key="b" type="radio">< mail href=”xxx@yyy” ></label> 
+	            <label><input data-key="b" type="radio">enclosed mail href=”xxx@yyy”</label> 
 	            </li> 
 	            <li> 
-	            <label><input data-key="c" type="radio">< mail >xxx@yyy </ mail > ></label> 
+	            <label><input data-key="c" type="radio">enclosed mail >xxx@yyy /mail</label> 
 	            </li> 
 	            <li> 
-	            <label><input data-key="d" type="radio">< a href=”mailto:xxx@yyy” ></label> 
+	            <label><input data-key="d" type="radio">enclosed a href=”mailto:xxx@yyy”</label> 
 	            </li> 
 	        </ul> 
 	        <div class="btnContainer"> 
 	            <div class="prev"> 
-	                <a class="btnPrev" href="#">Prev</a> 
-	            </div> 
+	                <a class="btnPrev" href="#"><img style="width:60px; height:60px;" src="assets/images/back.png" alt="prev button"></a>
+	        	</div> 
 	            <div class="next"> 
-	                <a class="btnNext" href="#">Next</a> 
+	                <a class="btnNext" href="#"><img style="width:60px; height:60px;" src="assets/images/forward.jpg" alt="next button"></a>
 	            </div> 
 	            <div class="clear"> 
 	            </div> 
 	        </div> 
-	    </div> 
+	    </div>
+	    <!--Q10 --> 
 	    <!-- More questions here -->
-	    <div class = "questionContainer hide">
+	    <div class = "questionContainer">
 	      <div class="question">
 	        What is the correct HTML for making a hyperlink?
 	      </div>
 	      <ul class="answers">
 	        <li>
-	          <label><input data-key="a" type="radio">< a href=”http:// website.com” >html Trends Quiz </ a ></label>
+	          <label><input data-key="a" type="radio">enclosed a href=”http:// website.com” html Trends Quiz/a</label>
 	        </li>
 	        <li>
-	          <label><input data-key="b" type="radio">< a name=”http:// website.com” >html Trends Quiz </ a ></label>
+	          <label><input data-key="b" type="radio">enclosed a name=”http:// website.com” >html Trends Quiz/a</label>
 	        </li>
 	        <li>
-	          <label><input data-key="c" type="radio">< http:// website.com > </ a ></label>
+	          <label><input data-key="c" type="radio">enclosed http:// website.com/a</label>
 	        </li>
 	        <li>
-	          <label><input data-key="d" type="radio">url = ”http:// website.com”>html Trends Quiz</label>
+	          <label><input data-key="d" type="radio">enclosed url = ”http:// website.com”>html Trends Quiz</label>
 	        </li>
 	      </ul>
 	      <div class="btnContainer">
 	        <div class="prev">
-	          <a class="btnPrev" href="#">Prev</a>
+	         <a class="btnPrev" href="#"><img style="width:60px; height:60px;" src="assets/images/back.png" alt="prev button">/></a>
 	        </div>
 	        <div class="next">
-	          <a class="btnShowResult" href="#">Finish</a>
+	          <a class="btnShowResult" href="#"><img style="width:60px; height:60px;" src="assets/images/confirm.png" alt="showResult button"> /></a>
 	        </div>
 	        <div class="clear">
 	        </div>
@@ -338,12 +347,13 @@
 	      </div> 
 	    </div>
 	    <div id="progressKeeper" >
-	      <div id="progress"></div>
-	      </div> 
+	      <div id="progress">
+	      </div>
+	    </div> 
 	    <div id="notice">
 	      Please select an option
-	    </div>    
-	  </div>
+	    </div>
+	</div>    
 	<!--=======================================================-->
 </body>
 </html>

@@ -1,11 +1,17 @@
 #main-question-holder { 
     margin: 0 auto; 
     position: relative; 
-    border:3px solid #dedede; 
-    border-radius: 2px; 
-    width: 600px; 
-    font-family:  "Myriad", "Myriad Pro", "Helvetica","Segoe UI", "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
-}
+    background:  radial-gradient(red, yellow, green); /* Standard syntax */; 
+    border:1px solid #dedede; 
+     box-shadow:0 1px 5px #D9D9D9,inset 0 10px 20px #F1F1F1; 
+     -o-box-shadow:0 1px 5px #D9D9D9,inset 0 10px 20px #F1F1F1; 
+     -webkit-box-shadow:0 1px 5px #D9D9D9,inset 0 10px 20px #F1F1F1; 
+     -moz-box-shadow:0 1px 5px #D9D9D9,inset 0 10px 20px #F1F1F1; 
+     border-radius: 2px; 
+     position: relative; 
+     width: 600px; 
+     font-family:  "Myriad", "Myriad Pro", "Helvetica","Segoe UI", "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+     }
 
 #main-question-holder a { 
     text-decoration: none; 
@@ -16,7 +22,7 @@
 } 
 .questionContainer { 
     width: 560px; 
-     height: 100%; 
+     min-height: 400px; 
     padding: 20px; 
      overflow: auto; 
      margin: auto; 
@@ -60,7 +66,7 @@ h2.qTitle {
    -webkit-box-shadow: 0 1px 5px #0061aa, inset 0 10px 20px #b6f9ff; 
    -moz-box-shadow: 0 1px 5px #0061aa, inset 0 10px 20px #b6f9ff; 
 } 
-.questionContainer .prev, .questionContainer .next { 
+/*.questionContainer .prev, .questionContainer .next { 
     height: 19px; cursor: pointer; padding: 5px 10px; 
    font-size: 16px; 
    padding: 5px 10px; 
@@ -79,7 +85,7 @@ h2.qTitle {
    -o-box-shadow: 0 1px 5px #3caa00, inset 0 10px 20px #c9ffb6; 
    -webkit-box-shadow: 0 1px 5px #3caa00, inset 0 10px 20px #c9ffb6; 
    -moz-box-shadow: 0 1px 5px #3caa00, inset 0 10px 20px #c9ffb6; 
-} 
+} */
 #progressKeeper { 
     width: 553px; 
     margin: 0px 12px; 
@@ -90,8 +96,8 @@ h2.qTitle {
      border-radius: 2px; 
      border:1px solid #dedede; 
      position: absolute; 
-     bottom: 10px; 
-     left: 10px; 
+     bottom: 45px; 
+     left: 260px; 
 } 
  #progress { 
     width: 0; 
@@ -119,15 +125,15 @@ h2.qTitle {
 .hide { display: none; } 
 .btnPrev { 
     padding-left: 24px; 
-    background: url(assets/images/back.png) left no-repeat; 
+    background: url(assets/images/back_1.png) left no-repeat; 
 } 
 .btnNext { 
     padding-right: 24px; 
-    background: url(assets/images/forward.png) right no-repeat; 
+    background: url(assets/images/forward.jpg) right no-repeat; 
 } 
 .btnShowResult{ 
     padding-left: 24px; 
-    background: url(assets/images/confirm.png) left no-repeat; 
+    background: url(assets/images/confirm_1.png) left no-repeat; 
 } 
 .btnStart { 
     display: block; 
