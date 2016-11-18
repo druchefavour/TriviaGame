@@ -156,9 +156,10 @@ $('.btnShowResult').click(function () {
         score;
             for (var i = 0, ii = results.length; i < ii; i++){
             if (results[i] == true) trueCount++;
+            alert(trueCount);
             resultSet += '<div class="resultRow"> Question #' + (i + 1) + (results[i] == true ? "<div class='correct'><span>Correct</span></div>": "<div class='wrong'><span>Wrong</span></div>") + "</div>";
             answerKey += (i+1) +" : "+ answers[i] //+' &nbsp;  &nbsp;  &nbsp;   '; //&nbsp is non-breaking space
-            
+            }
             score =  roundReloaded(trueCount / questionLength * 100, 2);
             answerKey = "<div id='answer-key'>" + answerKey + "</div>";
             resultSet = '<h2 class="qTitle">' +  finalPerformance(score) + ' You scored '+ score +'%</h2>' + resultSet + answerKey;
@@ -167,14 +168,12 @@ $('.btnShowResult').click(function () {
                 $(this).next().fadeIn(500);
             });
             return false;
-        }
-});
-
 progressKeeper.hide();
 notice.hide();
 $("#main-question-holder input:radio").attr("checked", false);
 $('.answers li input').click(function () {
     $(this).parents('.answers').children('li').removeClass("selected");
     $(this).parents('li').addClass('selected'); 
+});
 });
 })
