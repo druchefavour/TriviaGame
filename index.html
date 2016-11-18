@@ -38,6 +38,10 @@
   	<div id="main-question-holder">
     <!--A super simple slider (questionContainer) to hold our individual questions. Each slide will be housed within this div element -->
     <!--the intro container, the one which is displayed asking the user to take the quiz-->
+        <div id="answersData">
+        </div>
+        <div id="userAnswersData">
+        </div>
     	<div id="intro-container" class="questionContainer"> 
       		<a class="startClick" href="#"><img class="startImg" src="assets/images/start.png" alt="start image"></a>
     	</div>
@@ -318,13 +322,13 @@
 	      </div>
 	      <ul class="answers">
 	        <li>
-	          <label><input data-key="a" type="radio">enclosed a href=”http:// website.com” html Trends Quiz/a</label>
+	          <label><input data-key="a" type="radio">enclosed a href=”http:// website.com” html Trends Quiz</label>
 	        </li>
 	        <li>
-	          <label><input data-key="b" type="radio">enclosed a name=”http:// website.com” >html Trends Quiz/a</label>
+	          <label><input data-key="b" type="radio">enclosed a name=”http:// website.com” >html Trends Quiz</label>
 	        </li>
 	        <li>
-	          <label><input data-key="c" type="radio">enclosed http:// website.com/a</label>
+	          <label><input data-key="c" type="radio">enclosed http:// website.com</label>
 	        </li>
 	        <li>
 	          <label><input data-key="d" type="radio">enclosed url = ”http:// website.com”>html Trends Quiz</label>
@@ -332,10 +336,10 @@
 	      </ul>
 	      <div class="btnContainer">
 	        <div class="prev">
-	         <a class="btnPrev" href="#"><img style="width:60px; height:60px;" src="assets/images/back.png" alt="prev button">/></a>
+	         <a class="btnPrev" href="#"><img style="width:60px; height:60px;" src="assets/images/back.png" alt="prev button"></a>
 	        </div>
 	        <div class="next">
-	          <a class="btnShowResult" href="#"><img style="width:60px; height:60px;" src="assets/images/confirm.png" alt="showResult button"> /></a>
+	          <a class="btnShowResult" href="#"><img style="width:60px; height:60px;" src="assets/images/confirm.png" alt="showResult button"></a>
 	        </div>
 	        <div class="clear">
 	        </div>
@@ -343,6 +347,8 @@
 	    </div>
 	    <!--an empty div inside a result container to hold our results. We'll populate this element down the road when we're evaluating the results.-->
 	    <div id="results-container" class="questionContainer"> 
+	    	<div class="resultRow" >
+	    	</div>
 	      <div id="resultKeeper">
 	      </div> 
 	    </div>

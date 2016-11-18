@@ -125,15 +125,15 @@ h2.qTitle {
 .hide { display: none; } 
 .btnPrev { 
     padding-left: 24px; 
-    background: url(assets/images/back_1.png) left no-repeat; 
+    /*background: url(../images/back.png) left no-repeat;*/ 
 } 
 .btnNext { 
     padding-right: 24px; 
-    background: url(assets/images/forward.jpg) right no-repeat; 
+    /*background: url(../images/forward.jpg) right no-repeat;*/ 
 } 
 .btnShowResult{ 
     padding-left: 24px; 
-    background: url(assets/images/confirm_1.png) left no-repeat; 
+    /*background: url(../images/confirm.png) left no-repeat;*/ 
 } 
 .btnStart { 
     display: block; 
@@ -182,12 +182,12 @@ h2.qTitle {
   color: #F1F1F1; 
 } 
 .correct span { 
-    padding: 0 20px; 
-    background: url(assets/images/confirm.png) left no-repeat; 
+    padding: 0 5px; 
+    /*background: url(../images/confirm.png) left no-repeat;*/ 
 } 
 .wrong span { 
-    padding: 0 20px; 
-    background: url(assets/images/delete.png) left no-repeat; 
+    padding: 0 5px; 
+    background: /*url(../images/delete.png)*/ left no-repeat; 
 } 
 #answer-key { 
     text-align: center; 
