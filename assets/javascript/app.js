@@ -66,11 +66,11 @@ function checkAnswers() {
 //Construct comments on final performance
 function finalPerformance(score) {
     var returnString;
-    if (score > 50) returnString = "Awesome!";
+    if (score === 100) returnString = "Awesome!";
     else if ((score > 90) && (score < 100)) returnString = "Great!";
-    else if ((score > 70) && (score < 90)) returnString = "Doff my hat!";
-    else if ((score > 50) && (score < 70)) returnString = "mmmh!";
-    else if ((score > 35) && (score < 50)) returnString = "Go back to school!";
+    else if ((score > 70) && (score <= 90)) returnString = "Doff my hat!";
+    else if ((score > 50) && (score <= 70)) returnString = "mmmh!";
+    else if ((score > 35) && (score <= 50)) returnString = "Go back to school!";
     else if ((score > 20) && (score <=  35)) returnString = "Go do something else!";
     else returnString = "We need to talk!";
     return returnString;
