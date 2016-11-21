@@ -35,28 +35,6 @@ $('input[type=radio]').on('change', function(){
     $('input[type=radio]').not(this).prop('checked', false);
 });
 
-//===================================================================
-//Construct comments on final performance
-function finalPerformance(score) {
-    var returnString;
-    if (score === 100) {
-        returnString = "Awesome!";
-    } else if (score > 90) {
-        returnString = "Great!";
-    } else if (score > 70) {
-        returnString = "Doff my hat!";
-    } else if (score > 50) {
-        returnString = "Average Performance!";
-    } else if (score > 35) {
-        returnString = "Go back to school!";
-    } else if (score > 20) {
-        returnString = "Go do something else!";
-    } else {
-        returnString = "We need to talk!";
-        return returnString;
-    }
-}
-
 //==================================
 function timeUp() {
     $("#overlayTimeup").show();
@@ -84,6 +62,20 @@ function checkAnswers() {
         return resultArr;
     }
 //======================================================================
+//===================================================================
+//Construct comments on final performance
+function finalPerformance(score) {
+    var returnString;
+    if (score > 50) returnString = "Awesome!";
+    else if ((score > 90) && (score < 100)) returnString = "Great!";
+    else if ((score > 70) && (score < 90)) returnString = "Doff my hat!";
+    else if ((score > 50) && (score < 70)) returnString = "mmmh!";
+    else if ((score > 35) && (score < 50)) returnString = "Go back to school!";
+    else if ((score > 20) && (score <=  35)) returnString = "Go do something else!";
+    else returnString = "We need to talk!";
+    return returnString;
+}
+//======================================================================
 //function to calculate final scores
 function calculate() {
     progressKeeper.hide();
@@ -99,7 +91,8 @@ function calculate() {
     }
     score = roundReloaded(trueCount / questionLength * 100, 2);
     answerKey += "<div id='answer-key'>" + answerKey + "</div>";
-    resultSet = '<h2 class="qTitle">' +  finalPerformance(score) + ' You scored '+ score +'%</h2>' + resultSet + answerKey;
+    
+    resultSet = '<h2 class="resultTitle">' +  finalPerformance(score) + ' You scored '+ score +'%</h2>' + resultSet + answerKey;
     $('#resultKeeper').html(resultSet).show();
     $(this).parents('.questionContainer').fadeOut(500, function () {
         $(this).next().fadeIn(500);
