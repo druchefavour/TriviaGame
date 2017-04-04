@@ -1,6 +1,6 @@
 # Trivia Game
 
-Overview
+## Overview
 
 In this project a Trivia game using JavaScript for the logic and jQuery to manipulate HTML is created. The app is layed out with valid HTML and stylish CSS.
 
